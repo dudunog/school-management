@@ -1,3 +1,4 @@
+import { Text } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
@@ -22,7 +23,7 @@ function App() {
   return (
     <div className="App">
       {data.map(f => {
-        return <h2 key={f.pk}>{f.model}</h2>
+        return <Text key={f.pk}>{f.model}</Text>
       })}
     </div>
   );
